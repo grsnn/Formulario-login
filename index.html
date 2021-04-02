@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABS</title>
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="content-one">
+            <div class="menu">
+                <span class="fas fa-bars"></span>
+            </div>
+            <a href="https://discsllc.com/" target="_black" class="logo-content">
+                <img src="image/logo.png" alt="" class="logo">
+                <span class="text">Diseños CS</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="https://www.facebook.com/grsnchali/" target="_black" class="item"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/grsnchali/" target="_black" class="item"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/grsnn/" target="_black" class="item"><i class="fab fa-github"></i></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login__container">
+            <div class="content__error" id="containerError">
+                <p class="text"><i class="fas fa-times-circle"></i> Todos los campos son obligatorios.</p>
+            </div>
+            <h1 class="login__title">INGRESAR CON</h1>
+            <div class="login__for__social">
+                <a href="" class="facebook"><i class="fab fa-facebook-f"></i> FACEBOOK</a>
+                <a href="" class="github"><i class="fab fa-github"></i> GITHUB</a>
+            </div>
+            <div class="login__subtitle">
+                <span class="line"></span>
+                <span class="text">o</span>
+                <span class="line"></span>
+            </div>
+            <form class="login__form" id="formLogin" autocomplete="off">
+                <div class="form__group">
+                    <label for="email" class="label"><i class="fas fa-envelope"></i> CORREO ELECTRONICO</label>
+                    <div class="content__input" id="container__email">
+                        <input type="email" id="email" name="email" class="input__form input__email">
+                        <span class="icon__alert" id="icon__success__email"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                    <p class="message" id="message__error__email"><i class="fas fa-exclamation-triangle"></i> Ingrese un correo electrónico valido.</p>
+                </div>
+                <div class="form__group">
+                    <label for="pass" class="label"><i class="fas fa-key"></i> CONTRASEÑA</label>
+                    <div class="content__input" id="container__pass">
+                        <input type="password" id="pass" name="pass" class="input__form input__pass">
+                        <span class="icon__alert" id="icon__success__pass"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                    <p class="message" id="message__error__pass"><i class="fas fa-exclamation-triangle"></i> Ingrese una contraseña mayor a 6 caracteres.</p>
+                </div>
+                <div class="content__button">
+                    <button type="submit" class="login__button"><i class="fas fa-sign-in-alt"></i> INICIAR SESION</button>
+                    <div class="disable__button" id="disableButton">
+                        <span class="loader__button"></span>
+                    </div>
+                </div>
+                <a href="" class="link">¿ No tienes una cuenta ?</a>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
